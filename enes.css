@@ -1,0 +1,54 @@
+/*
+    Auther: Abdelrhman Said
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+   .wrapper
+   {
+      position: fixed;
+
+      top: 550px;
+      right: -850px;
+   }
+
+.wrapper .icon {
+  position: relative;
+  background-color: #313131;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(1);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background-color: #fffff;
+  color: #fffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(1);
+}
+
+
+
+.wrapper .random:hover,
+.wrapper .random:hover .tooltip,
+.wrapper .random:hover .tooltip::before {
+  background-color: #767676;
+  color: #FFfff;
+}
